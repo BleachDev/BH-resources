@@ -1,0 +1,10 @@
+{
+  "name": "0.15.1",
+  "version": 26,
+  "installer" : {
+    "name" : "BH-Updater 1.0"
+    "link" : "https://a.a"
+    "version" : 1
+    "url" : "https://nightly.link/BleachDrinker420/bleachhack-1.14/workflows/gradle/master/BleachHack-1.16.5.zip"
+  }
+}
