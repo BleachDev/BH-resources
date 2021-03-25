@@ -2,7 +2,7 @@
   "name": "0.15.1",
   "version": 27,
   "installer" : {
-    "link" : "https://raw.githubusercontent.com/BleachDrinker420/BH-resources/master/update/installer/installer-1.0.exe",
+    "link" : "https://raw.githubusercontent.com/BleachDrinker420/BH-resources/master/update/installer/installer-1.1.exe",
     "version" : 1,
     "url" : "https://nightly.link/BleachDrinker420/BleachHack/workflows/gradle/master/BleachHack-1.16.5.zip"
   }
