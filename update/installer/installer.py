@@ -5,15 +5,26 @@ import uuid
 import zipfile
 import requests
 import shutil
+from colorama import Fore, init
 from clint.textui import progress
 
-if len(sys.argv) != 3:
-    print("Invalid argument size")
-    print("Syntax: installer.py [old-mod] [new-mod-url]")
-    time.sleep(10)
-    sys.exit()
 
-#url = "https://nightly.link/BleachDrinker420/BleachHack/workflows/gradle/master/BleachHack-1.16.5.zip"
+def _exit():
+    print(Fore.RESET)
+
+    if os.name == 'nt':
+        os.system("pause")
+    else:
+        os.system('read -s -n 1 -p "Press any key to continue..."')
+
+    sys.exit()
+    
+init()
+
+if len(sys.argv) != 3:
+    print(Fore.RED + "Invalid argument size")
+    print(Fore.RED + "Syntax: installer.py [old-mod] [new-mod-url]")
+    _exit()
 
 oldmodfile = sys.argv[1]
 url = sys.argv[2]
@@ -21,7 +32,6 @@ tempfile = "bh-" + str(uuid.uuid4())
 
 print("Downloading latest build..")
 
-# stackoverflow momento
 r = requests.get(url, stream=True)
 with open(tempfile, "wb") as f:
     header = r.headers.get("content-length")
@@ -36,8 +46,6 @@ with open(tempfile, "wb") as f:
             f.write(chunk)
             f.flush()
 
-print()
-
 if url.endswith(".zip"):
     print("Extracting jar..")
     with zipfile.ZipFile(tempfile, 'r') as zp:
@@ -49,8 +57,7 @@ if url.endswith(".zip"):
                 f.write(zp.read(files[0].filename))
         else:
             print("No files in zipfile, Aborting!")
-            time.sleep(10)
-            sys.exit()
+            _exit()
 
     os.remove(tempfile)
     tempfile = unzippedfile
@@ -68,7 +75,7 @@ while True:
         break;
     except Exception as e:
         if not os.path.exists(oldmodfile):
-            print("- File already deleted??")
+            print(Fore.YELLOW + "- File already deleted??")
             break;
 
         if firstLine:
@@ -82,9 +89,10 @@ while True:
 try:
     shutil.move(tempfile, oldmodfile)
 except Exception as e:
-    print("Unable to move jar to mod directory, Aborting!")
-    time.sleep(10)
-    sys.exit()
+    print(Fore.RED + "Unable to move jar to mod directory, Aborting!")
+    _exit()
 
-print("\nInstalled Successfully!")
-time.sleep(10)
+print(Fore.GREEN + "\nInstalled Successfully!")
+print(Fore.GREEN + "Restart Minecraft to apply the new version")
+
+_exit()
