@@ -1,6 +1,6 @@
 {
   "name": "0.15.1",
-  "version": 27,
+  "version": 26,
   "installer" : {
     "link" : "https://raw.githubusercontent.com/BleachDrinker420/BH-resources/master/update/installer/installer-1.1.exe",
     "version" : 2,
