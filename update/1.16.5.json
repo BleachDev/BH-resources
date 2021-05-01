@@ -1,9 +1,9 @@
 {
-  "name": "0.15.3",
-  "version": 28,
+  "name": "0.16",
+  "version": 29,
   "installer" : {
     "link" : "https://raw.githubusercontent.com/BleachDrinker420/BH-resources/master/update/installer/installer-1.1.exe",
     "version" : 2,
-    "url" : "https://github.com/BleachDrinker420/BleachHack/releases/download/0.15.3/BleachHack-1.16.5.jar"
+    "url" : "https://github.com/BleachDrinker420/BleachHack/releases/download/0.16/BleachHack-1.16.5.jar"
   }
 }
