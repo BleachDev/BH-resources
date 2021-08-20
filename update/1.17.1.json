@@ -1,8 +1,8 @@
 {
-  "name": "1.2",
+  "name": "1.1-test",
   "version": 0,
   "installer" : {
-    "link" : "https://raw.githubusercontent.com/BleachDrinker420/BH-resources/master/update/installer/installer-1.1.exe",
+    "link" : "https://example.com",
     "version" : 2,
     "url" : "https://example.com",
     "os" : "Windows"
