@@ -1,0 +1,22 @@
+{
+  "name": "1.2.4",
+  "version": 38,
+  "installer" : {
+    "link" : "https://raw.githubusercontent.com/BleachDrinker420/BH-resources/master/update/installer/installer-1.1.exe",
+    "version" : 2,
+    "url" : "https://github.com/BleachDrinker420/BleachHack/releases/download/1.2.4/bleachhack-1.18.jar",
+    "os" : "Windows"
+  },
+  "changelog" : [
+    "Fixed Optifine crashing your game",
+    "Fixed ChunkSize being able to crash your game",
+    "Fixed the game crashing if you had velocity enabled in meteor",
+    "Fixed the game crashing when using the --release argument in java",
+    "Fixed Xray not working with Fabric API",
+    "Prevented the game from crashing when trying to open UI on the main menu",
+    "Fixed $toggle not working correctly",
+    "Updated the description of AntiHunger to make it clearer that you slide",
+    "Added the BH version to the credits screen and updated my name/description",
+    "Moved the resource url to https://bleachhack.org/resources/"
+  ]
+}
