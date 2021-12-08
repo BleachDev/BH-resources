@@ -1,33 +1,22 @@
 {
-  "name": "1.2.3",
-  "version": 37,
+  "name": "1.2.4",
+  "version": 38,
   "installer" : {
     "link" : "https://raw.githubusercontent.com/BleachDrinker420/BH-resources/master/update/installer/installer-1.1.exe",
     "version" : 2,
-    "url" : "https://github.com/BleachDrinker420/BleachHack/releases/download/1.2.3/bleachhack-1.17.1.jar",
+    "url" : "https://github.com/BleachDrinker420/BleachHack/releases/download/1.2.4/bleachhack-1.17.1.jar",
     "os" : "Windows"
   },
   "changelog" : [
-    "Added BlockHighlight",
-    "Added ToggleNotify",
-    "Added AutoCraft",
-    "Added AutoEat",
-    "Improved Nametags",
-    "- Replaced Nametags Armor setting with Inventory to make it simpler",
-    "- Added an Inventory setting to mobs and animals",
-    "- Added a armor stands option",
-    "- Made rendering a bit cleaner",
-    "Rewritten ESP, StorageESP and BlockHighlight",
-    "- Added a new shader mode to all three",
-    "--- Shaders now don't conflict with each other or reset when you F3+T",
-    "--- Added a shader fill option",
-    "- Improved performance of ESP and StorageESP",
-    "- Removed the \"Donkeys\" option from ESP because donkey dupes are dead",
-    "Fixed compatibility with other utility mods on fabric loader 0.12.0+",
-    "Made the UI gui cleaner and moved the edit UI button to the top of the clickgui",
-    "Fixed lag spikes when loading chunks (kinda fixed, thanks sudofox)",
-    "Autobuild can now use your entire inventory + add multiple block support",
-    "Moved blocks a bit over in the Notebot gui to make Iron_Xylophone not lay over the block",
-    "Improved Performance by removing all reflection"
+    "Fixed Optifine crashing your game",
+    "Fixed ChunkSize being able to crash your game",
+    "Fixed the game crashing if you had velocity enabled in meteor",
+    "Fixed the game crashing when using the --release argument in java",
+    "Fixed Xray not working with Fabric API",
+    "Prevented the game from crashing when trying to open UI on the main menu",
+    "Fixed $toggle not working correctly",
+    "Updated the description of AntiHunger to make it clearer that you slide",
+    "Added the BH version to the credits screen and updated my name/description",
+    "Moved the resource url to https://bleachhack.org/resources/"
   ]
 }
