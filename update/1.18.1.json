@@ -1,0 +1,21 @@
+{
+  "name": "1.2.5",
+  "version": 39,
+  "installer" : {
+    "link" : "https://raw.githubusercontent.com/BleachDrinker420/BH-resources/master/update/installer/installer-1.1.exe",
+    "version" : 2,
+    "url" : "https://github.com/BleachDrinker420/BleachHack/releases/download/1.2.5/bleachhack-1.18.1.jar",
+    "os" : "Windows"
+  },
+  "changelog" : [
+    "Fixed Optifine compatibility",
+    "Fixed your modules being able to reset when restarting Minecraft",
+    "Fixed AutoFish if multiple players were fishing next to each other",
+    "Fixed Killaura Projectiles not working",
+    "Fixed AutoEat not disabling correctly",
+    "Fixed a typo in AutoEat",
+    "Moved Armor stands from StorageESP to ESP and added them to Tracers",
+    "Increased the render limit of Search to 3000",
+    "Removed the bundled Fabric api modules so the jar is now ~150kb smaller"
+  ]
+}
